@@ -36,6 +36,8 @@ app.component("product-display", {
         
       </div>
     </div>
+    <review-list v-if="reviews.length" :reviews="reviews"></review-list>
+    <review-form @review-submitted="addReview"></review-form>
   </div>`,
   data() {
     return {
@@ -57,15 +59,19 @@ app.component("product-display", {
           quantity: 5,
         },
       ],
+      reviews: [],
     };
   },
   methods: {
     addToCart() {
-      this.$emit('add-to-cart',this.variants[this.selectedVariant].id);
+      this.$emit("add-to-cart", this.variants[this.selectedVariant].id);
     },
-    
+
     updateVariant(index) {
       this.selectedVariant = index;
+    },
+    addReview(review) {
+      return this.reviews.push(review);
     },
   },
   computed: {
