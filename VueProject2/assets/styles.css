@@ -1,0 +1,75 @@
+body {
+  background-color: whitesmoke;
+  font-family: sans-serif;
+}
+
+.button-list-container {
+  box-sizing: border-box;
+  background-color: #fff;
+  border-style: solid;
+  border-color: lightgrey;
+  width: 272px;
+  height: 682px;
+  border-radius: 16px;
+  padding: 24px;
+  border-width: 1px;
+  box-shadow: 4px 4px 20px lightgrey;
+}
+
+.list-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #505866;
+}
+
+.button-primary {
+  width: auto;
+  height: 40;
+  border-radius: 6px;
+  padding: 12px;
+  background-color: #6418c3;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: inset;
+  border: none;
+  cursor: pointer;
+  margin: 30;
+  text-align: center;
+}
+
+.circle {
+  vertical-align: middle;
+  line-height: 20px;
+  background-color: #f3f4f6;
+  width: auto;
+  height: 20px;
+  border-radius: 14px;
+  text-align: center;
+  color: #999ea7;
+  font-size: 11px;
+  padding: 1px 3px;
+}
+
+table {
+  width: 220px;
+  height: 171px;
+}
+
+tr {
+  padding-bottom: 116px;
+}
+
+.button-row {
+  padding-right: 10px;
+}
+
+.list-dot {
+  width: 4.5px;
+  height: 4.5px;
+  border-radius: 50%;
+  background-color: #6418c3;
+  padding: 2px;
+}
+
